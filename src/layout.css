@@ -1,0 +1,68 @@
+body{
+    text-align:center;
+}
+.inputForm{
+    box-sizing: border-box;
+    height:600px;
+    width: 420px;
+    float: left;
+    overflow: inherit;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#inputText{
+    height:60%;
+    width:100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: auto;
+    border-radius: 5%;
+    background: url('./img/2.jpg') no-repeat;
+    background-size: auto;
+    font-size: x-large;
+}
+#inputTime{
+    height:5%;
+    width:100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: auto;
+    /*border-radius: 5%;*/
+}
+#addButton{
+    height:40px;
+    width:100px;
+    border-radius: 30%;
+    background-color: red;
+    margin:0 auto;
+}
+.listRow{
+    margin-bottom: 5px;
+    margin-top:5px;
+    height:100px;
+}
+.textRow{
+    border:2px solid;
+    border-radius: 10%;
+    float: left;
+    width:80%;
+    height: 80%;
+    padding: 5px;
+}
+.buttonRow{
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    float: left;
+    height: 30%;
+    border-radius: 35%;
+    background-color: blanchedalmond;
+}
+.inputDiv{
+    float: left;
+}
+.textList{
+    width:60%;
+    float: left;
+    /*margin-left:10%;*/
+}
