@@ -2,8 +2,7 @@
  * Created by hasee on 2017/3/5.
  */
 
-var notice = [{id: 1, text: "111111", time: "11:11"}, {id: 2, text: "2222", time: "22:22"}]
-var app = app || {}
+// var notice = [{id: 1, text: "111111", time: "11:11"}, {id: 2, text: "2222", time: "22:22"}]
 var InputText = React.createClass({
     getInitialState: function () {
         return {text: '', time: ''}
@@ -138,15 +137,15 @@ var TextList = React.createClass({
 var Notificaiton = React.createClass({
     getInitialState:function () {
         // window.localStorage.clear();
-        var noticeList = [];
-        if(window.localStorage.getItem("notice") !== undefined){
-            noticeList = JSON.parse(window.localStorage.getItem("notice"))
+        var a  = [];
+        if(window.localStorage.getItem("notice") !== null){
+            a = JSON.parse(window.localStorage.getItem("notice"))
         }
-        return ({noticeList:noticeList});
+        // console.log(a);
+        return ({noticeList:a});
     },
     handleDeleteList:function (list) {
         this.setState({noticeList: list});
-
     },
     handleListChange:function (nextProps) {
         this.setState({noticeList:nextProps});
@@ -181,4 +180,4 @@ var Notificaiton = React.createClass({
 ReactDOM.render(
     <Notificaiton />,
     document.getElementById("example")
-)
+);
